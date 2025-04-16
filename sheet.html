@@ -1,22 +1,35 @@
-<div class="pf-box header-v2">
-  <div class="logo">
-    <img src="https://i.ibb.co/ymG5hTJ3/Ninja-RPG-Logo-1.png" alt="Logo" />
-  </div>
-  <div class="id-fields">
-    <div class="row">
-      <label>Nom du ninja</label><input type="text" name="attr_nom_ninja" />
-      <label>Rang</label><input type="text" name="attr_rang" />
-      <label>Discipline</label><input type="text" name="attr_discipline" />
-    </div>
-    <div class="row">
-      <label>&Acirc;ge</label><input type="text" name="attr_age" />
-      <label>Sexe</label><input type="text" name="attr_sexe" />
-    </div>
-    <div class="row">
-      <label>Taille</label><input type="text" name="attr_taille" />
-      <label>Poids</label><input type="text" name="attr_poids" />
-      <label>Cheveux</label><input type="text" name="attr_cheveux" />
-      <label>Yeux</label><input type="text" name="attr_yeux" />
-    </div>
-  </div>
-</div>
+.header-v2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.id-fields {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  column-gap: 12px;
+  row-gap: 6px;
+  align-items: center;
+  flex: 1;
+}
+
+.id-fields label {
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.id-fields input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background: transparent;
+  font-size: 12px;
+  padding: 2px 4px;
+  width: 100px;
+}
