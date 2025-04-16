@@ -1,33 +1,7 @@
-/* — Général — */
-.pf-box {
-  border: 2px solid #444;
-  background: #f8f8f8;
-  padding: 8px;
-  margin: 10px 0;
-  border-radius: 6px;
-}
-
-label {
-  font-weight: bold;
-  font-size: 10px;
-  text-transform: uppercase;
-  color: #333;
-  margin-bottom: 2px;
-}
-
-input[type="text"] {
-  font-size: 12px;
-  padding: 4px;
-  border: 1px solid #bbb;
-  border-radius: 4px;
-}
-
-/* — Header Ninja — */
-.header {
+.header-v2 {
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  flex-wrap: wrap;
 }
 
 .logo img {
@@ -35,15 +9,33 @@ input[type="text"] {
   height: auto;
 }
 
-.grid-10 {
-  flex: 1;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 8px;
-}
-
-.grid-10 div {
+.id-fields {
   display: flex;
   flex-direction: column;
+  gap: 6px;
+  flex: 1;
 }
 
+.id-fields .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+}
+
+.id-fields label {
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #333;
+  min-width: 60px;
+}
+
+.id-fields input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #aaa;
+  background: transparent;
+  font-size: 12px;
+  padding: 2px 4px;
+  flex: 0 0 120px;
+}
