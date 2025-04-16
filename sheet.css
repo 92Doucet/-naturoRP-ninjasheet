@@ -1,36 +1,59 @@
+/* — Police sobre — */
+body, input {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 12px;
+}
+
+/* — Layout général — */
 .header-v2 {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 16px;
+  display: flex;
   align-items: flex-start;
+  gap: 16px;
 }
 
 .logo img {
-  max-width: 100%;
+  max-width: 100px;
   height: auto;
 }
 
+/* — Grille de champs — */
 .id-fields {
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  grid-auto-rows: auto;
-  gap: 4px 12px;
-  align-items: end;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
 }
 
-.id-fields label {
-  font-weight: bold;
-  font-size: 10px;
-  text-transform: uppercase;
-  margin-bottom: 0px;
-  color: #333;
+/* Chaque ligne */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
 }
 
-.id-fields input[type="text"] {
+/* Conteneur individuel pour chaque champ */
+.field-block {
+  display: flex;
+  flex-direction: column-reverse; /* important : label en dessous */
+  align-items: flex-start;
+  min-width: 120px;
+}
+
+/* Champ de saisie */
+.field-block input[type="text"] {
   border: none;
   border-bottom: 1px solid #aaa;
   background: transparent;
   font-size: 12px;
   padding: 2px 4px;
-  min-width: 90px;
+  width: 120px;
+}
+
+/* Label en bas, sobre, petit */
+.field-block label {
+  font-size: 9px;
+  color: #555;
+  text-transform: uppercase;
+  margin-top: 2px;
 }
