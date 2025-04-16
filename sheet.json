@@ -1,1 +1,9 @@
-
+{
+  "html": "sheet.html",
+  "css": "sheet.css",
+  "js": "sheet.js",
+  "roll20stylesheet": true,
+  "authors": "Keven Doucet",
+  "preview": "https://i.ibb.co/ymG5hTJ3/Ninja-RPG-Logo-1.png",
+  "instructions": "Feuille personnalisée Naruto RPG pour Roll20"
+}
